@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Warehouse Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        .title,
+        .footer {
+            background-color: #25c145;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        label,
+        select,
+        input {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        select,
+        input[type="text"],
+        input[type="submit"] {
+            padding: 10px;
+            border: 1px solid #25c145;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #4de14a;
+            box-shadow: 0 0 8px rgba(77, 225, 74, 0.5);
+        }
+        
+        input[type="submit"] {
+            background-color: #72f25c;
+            color: white;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #4de14a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Fruits Warehouse Recommendation System</div>
+    <form action="/predict" method="post">
+        <label for="days">Select Days Type:</label>
+        <select name="days" id="days">
+            <option value="0">Holiday</option>
+            <option value="1">Weekday</option>
+            <option value="2">Weekend</option>
+        </select>
+        <label for="fruits">Select Fruit Name:</label>
+        <select name="fruits" id="fruits">
+            <option value="1">Mango</option>
+            <option value="2">Banana</option>
+            <option value="3">Grapes</option>
+            <option value="4">Apple</option>
+            <option value="5">Orange</option>
+        </select>
+        <label for="fruit_cost">Enter Fruit Cost:</label>
+        <input type="text" name="fruit_cost" id="fruit_cost">
+        <input type="submit" value="Predict">
+    </form>
+    <div class="footer">Project Made By Sohel Mansuri</div>
+</body>
+
+</html>

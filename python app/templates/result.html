@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        table {
+            width: 90%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        th {
+            background-color: #35ec35;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 768px) {
+            table,
+            th,
+            td {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prediction Result</h1>
+    {% for table in tables %} {{ table | safe }} {% endfor %}
+</body>
+
+</html>
