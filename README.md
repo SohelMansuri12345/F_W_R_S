@@ -48,9 +48,11 @@ The results will be displayed in a table format showing recommended quantity, ma
 
 ## Screenshots
 
-![Screenshot (173)](https://github.com/SohelMansuri12345/Fruit-Warehouse-Recommendation-System/assets/168846227/d93ab476-c129-42c0-b9eb-6929296ac63a)
+![Screenshot (173)](https://github.com/SohelMansuri12345/Fruit-Warehouse-Recommendation-System/assets/168846227/f0fe26dd-9847-4085-aced-c71ed6b389a5)
 
-![Screenshot (174)](https://github.com/SohelMansuri12345/Fruit-Warehouse-Recommendation-System/assets/168846227/167e6f8b-b537-442d-a3a8-0894ff68b575)
+
+![Screenshot (174)](https://github.com/SohelMansuri12345/Fruit-Warehouse-Recommendation-System/assets/168846227/2b4a740f-0a3e-43bf-b3bb-0dc9b2675915)
+
 
 Thank you...
 
